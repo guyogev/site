@@ -9,14 +9,12 @@ angular.module('app')
         title: '@',
         src: '@'
       },
-      templateUrl: 'javascripts/animated_img/animated_img_view.html',
+      templateUrl: 'modules/animated_img/animated_img.view.html',
       link: function postLink(scope, elem, attr) {
-        console.log(attr);
         // Init
         var Transitionable = $famous['famous/transitions/Transitionable'];
         var duration = 3000 + parseInt(attr.animationOffset, 10);
         scope.rotate = new Transitionable(0);
-        console.log(duration);
         function animate() {
           scope.rotate.set(0, {duration: 0});
           scope.rotate.set(Math.PI * 2, {duration: duration});
