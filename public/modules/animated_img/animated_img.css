@@ -1,0 +1,10 @@
+.animated-img-wrapper {
+  height: 100px;
+  width: 100px;
+  float: left;
+}
+.animated-img {
+  height: 100px;
+  overflow: hidden;
+  width: 100px;
+}
